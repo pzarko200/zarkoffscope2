@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MyActivity" >
+    <item android:id="@+id/about"
+        android:icon="@drawable/ic_about"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/menu_about" />
+
+    <item android:id="@+id/help"
+        android:icon="@drawable/ic_help"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/menu_help" />
+    <item android:id="@+id/mBio"
+        android:icon="@drawable/ic_action_trend"
+        android:title="@string/mBio"
+        app:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/mMap"
+        android:icon="@mipmap/ic_action_map"
+        android:title="@string/mMap"
+        app:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/mAccel"
+        android:icon="@drawable/crystalball"
+        android:title="@string/mAccel"
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>

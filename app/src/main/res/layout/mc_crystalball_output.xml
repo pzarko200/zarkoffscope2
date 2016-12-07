@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="238dp"
+        android:layout_height="381dp"
+        android:id="@+id/crystal_ball_img"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/crystalball" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/cb_out_msg"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/holo_green_dark"/>
+
+</LinearLayout>

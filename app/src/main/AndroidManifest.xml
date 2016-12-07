@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zarkov.petar">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- The following two permissions are not required to use
+         Google Maps Android API v2, but are recommended. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAri2HGGjWjlAhEgyagg4Ai8n7cU_S1YRM"/>
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".mcSaveDataOutput"
+            android:label="@string/mc_SavingDataOutput"></activity>
+        // Lab 7 code goes here
+        <activity android:name=".mcBioActivity"
+            android:label="Biorythmns"></activity>
+        // Lab 8 code - Map Output Screen Activity - Lab 8
+        <activity android:name=".MapActivity"
+            android:label="@string/Map">
+        </activity>
+        // Cities db activity
+        <activity android:name=".GridViewActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/dbGrid">
+        </activity>
+        <activity android:name=".Aries"
+            android:label="Aries"/>
+        <activity android:name=".Taurus"
+            android:label="Taurus"/>
+        <activity android:name=".Gemini"
+            android:label="Gemini"/>
+        <activity android:name=".Cancer"
+            android:label="Cancer"/>
+        <activity android:name=".Leo"
+            android:label="Leo"/>
+        <activity android:name=".Virgo"
+            android:label="Virgo"/>
+        <activity android:name=".Libra"
+            android:label="Libra"/>
+        <activity android:name=".Scorpio"
+            android:label="Scorpio"/>
+        <activity android:name=".Sagittarius"
+            android:label="Sagittarius"/>
+        <activity android:name=".Capricorn"
+            android:label="Capricorn"/>
+        <activity android:name=".Aquarius"
+            android:label="Aquarius"/>
+        <activity android:name=".Pisces"
+            android:label="Pisces"/>
+    </application>
+
+</manifest>
