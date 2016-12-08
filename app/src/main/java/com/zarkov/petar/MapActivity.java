@@ -35,7 +35,7 @@ import java.util.HashSet;
  * {@link com.google.android.gms.maps.OnMapReadyCallback}.
  */
 public class MapActivity extends AppCompatActivity {
-
+    //declare vars
     private ListFragment mList;
 
     private MapAdapter mAdapter;
@@ -44,7 +44,7 @@ public class MapActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        // Set view to Lite-List
         setContentView(R.layout.lite_list);
 
         // Set a custom list adapter for a list of locations

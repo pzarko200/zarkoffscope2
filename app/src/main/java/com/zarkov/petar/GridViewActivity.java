@@ -31,7 +31,7 @@ import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 
 public class GridViewActivity extends Activity implements AdapterView.OnItemClickListener {
-
+    // Declare vars
     private GridView mGridView;
     private CityAdapter mAdapter;
 
@@ -77,7 +77,7 @@ public class GridViewActivity extends Activity implements AdapterView.OnItemClic
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        realm.close(); // Remember to close Realm when done.
+        realm.close(); //  close Realm when done.
     }
 
     private List<City> loadCities() {
@@ -149,17 +149,17 @@ public class GridViewActivity extends Activity implements AdapterView.OnItemClic
             case R.id.help:
                 finish();
                 return true;
-            // Lab 7 code goes here
+            // bio activity
             case R.id.mBio: // Lab 7
                 Intent mcBioDraw = new Intent(this, mcBioActivity.class);
                 this.startActivity(mcBioDraw);
                 return true;
-            // Lab 8 code goes here
+            // map activity
             case R.id.mMap: // Lab 8
                 Intent Map = new Intent(this, MapActivity.class);
                 this.startActivity(Map);
                 return true;
-            // Lab 9 code goes here
+            // this activity
             case R.id.mAccel:
                 Intent mcCB = new Intent(this, GridViewActivity.class);
                 this.startActivity(mcCB);

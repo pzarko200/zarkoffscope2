@@ -4,12 +4,11 @@ import android.content.Context;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
-/**
- * Created by rla on 31/10/2016.
- */
+
 
 public class mcBiorhythmsSurfaceView extends SurfaceView implements SurfaceHolder.Callback
 {
+    //declare vars
     private SurfaceHolder shBioSurface;
 
     mcBiorhythmsThread drawingThread = null;

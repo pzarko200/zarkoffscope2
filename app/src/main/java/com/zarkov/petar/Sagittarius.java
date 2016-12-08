@@ -10,7 +10,9 @@ import com.zarkov.petar.R;
 /**
  * Created by Petar Zarkov on 30/09/2016.
  */
+//**zodiac class for sagittarius**//
 public class Sagittarius extends Activity {
+    //** declare variables**//
     TextView tv,tv1,tv2,tv3;
     ImageView iv;
     Boolean connected;
@@ -19,20 +21,25 @@ public class Sagittarius extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //set view to common
         setContentView(R.layout.common);
+        //initiate method for views
         init();
+        //set text of tv param to zodiacs' name
         tv.setText(R.string.Sagittarius);
+        //set image of zodiac
         iv.setBackgroundResource(R.drawable.sagittarius);
+        //exec fetch
         fetch();
     }
-
+    //assign variables to views
     private void init() {
         tv=(TextView)findViewById(R.id.textView);
         tv1=(TextView)findViewById(R.id.textView1);
         tv2=(TextView)findViewById(R.id.textView2);
         iv=(ImageView)findViewById(R.id.imageView);
     }
-
+    //populate feed
     public void fetch(){
         obj = new HandleXML(finalUrl);
         obj.fetchXML();

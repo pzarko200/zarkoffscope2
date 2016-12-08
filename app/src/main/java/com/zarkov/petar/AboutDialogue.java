@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 
 
+//** Dialogue class **//
 
 public class AboutDialogue extends DialogFragment {
 

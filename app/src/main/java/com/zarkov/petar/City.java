@@ -5,12 +5,13 @@ package com.zarkov.petar;
 
 
 import io.realm.RealmObject;
+//city class with votes and names
 
 public class City extends RealmObject {
-
+    //declare variables
     private String name;
     private long votes;
-
+    //getters and setters for those variables
     public String getName() {
         return name;
     }

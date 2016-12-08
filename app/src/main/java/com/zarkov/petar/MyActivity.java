@@ -25,9 +25,11 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.support.v7.app.AppCompatActivity;
 
-
+/**
+ * Created by Petar Zarkov on 30/09/2016.
+ */
 public class MyActivity extends AppCompatActivity implements View.OnClickListener {
-
+    //declare variables
     ImageButton a,b,c,d,e,f,g,h,i,j,k,l;
     boolean connected,online;
     ProgressDialog pro;
@@ -40,7 +42,9 @@ public class MyActivity extends AppCompatActivity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // set view to main layout
         setContentView(R.layout.activity_my);
+        //exec check
         check chk=new check();
         chk.execute();
         /*try {
@@ -71,7 +75,7 @@ public class MyActivity extends AppCompatActivity implements View.OnClickListene
         mcSDPrefs.setDefaultPrefs();
         
     }
-    
+    //asyncTask
     public class check extends AsyncTask<Void, Void, Void>{
     	
     	ProgressDialog dialog = new ProgressDialog(MyActivity.this);
@@ -122,7 +126,7 @@ public class MyActivity extends AppCompatActivity implements View.OnClickListene
 		}
     	
     }
-
+    //method to check connectivity
     private boolean isOnline() {
     	if (isConnected()) {
     		 try {
@@ -145,7 +149,7 @@ public class MyActivity extends AppCompatActivity implements View.OnClickListene
     	}
         return false;
 	}
-
+    //method to ensure connection
 	public boolean isConnected() {
 		// TODO Auto-generated method stub
     	ConnectivityManager cm =
@@ -157,6 +161,7 @@ public class MyActivity extends AppCompatActivity implements View.OnClickListene
     	    return false;
 		
 	}
+    //init method to assing views to params
 	private void init() {
         a=(ImageButton)findViewById(R.id.aries);
         b=(ImageButton)findViewById(R.id.taurus);
@@ -227,7 +232,7 @@ public class MyActivity extends AppCompatActivity implements View.OnClickListene
         }
     }
 
-
+    //onclick create new intent/view for each zodiac
     @Override
     public void onClick(View view) {
         Intent i;

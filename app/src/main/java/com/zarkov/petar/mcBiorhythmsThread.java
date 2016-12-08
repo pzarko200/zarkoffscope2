@@ -9,11 +9,13 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 /**
- * Created by rla on 31/10/2016.
+ * Created by Petar Zarkov on 30/09/2016.
  */
+
 
 public class mcBiorhythmsThread extends Thread
 {
+    //declare variables
     private int canvasWidth;
     private int canvasHeight;
     private float xPos = 0.0f;

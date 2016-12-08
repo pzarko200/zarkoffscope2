@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-
+/**
+ * Created by Petar Zarkov on 30/09/2016.
+ */
 
 public class mcSaveData extends Activity {
 

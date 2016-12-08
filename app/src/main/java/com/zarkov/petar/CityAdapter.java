@@ -21,11 +21,11 @@ import java.util.Locale;
 
 
 public class CityAdapter extends BaseAdapter {
-
+    //declare vars and adapter
     private LayoutInflater inflater;
 
     private List<City> cities = null;
-
+    //inflate it
     public CityAdapter(Context context) {
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
@@ -33,7 +33,7 @@ public class CityAdapter extends BaseAdapter {
     public void setData(List<City> details) {
         this.cities = details;
     }
-
+    //get count of cities
     @Override
     public int getCount() {
         if (cities == null) {
@@ -41,7 +41,7 @@ public class CityAdapter extends BaseAdapter {
         }
         return cities.size();
     }
-
+    //get position
     @Override
     public Object getItem(int position) {
         if (cities == null || cities.get(position) == null) {
@@ -49,12 +49,14 @@ public class CityAdapter extends BaseAdapter {
         }
         return cities.get(position);
     }
-
+    //get item id
     @Override
     public long getItemId(int i) {
         return i;
     }
-
+    //get position, view, and parent of city
+    //if view null ->inflate
+    //if city populated set name and format votes
     @Override
     public View getView(int position, View currentView, ViewGroup parent) {
         if (currentView == null) {

@@ -10,8 +10,9 @@ import java.net.URL;
 /**
  * Created by Petar Zarkov on 20/10/2016.
  */
+//** parse into variety of sources, like input streams, files, urls, etc. SSL and TrustManager to trust all hosts and secure random SSL, do not verify host name**//
 public class HandleXML {
-    //** parse into variety of sources, like input streams, files, urls, etc. SSL and TrustManager to trust all hosts and secure random SSL, do not verify host name**//
+    // Declare vars
     private String title = "title";
     private String link = "link";
     private String description = "description";
@@ -32,6 +33,7 @@ public class HandleXML {
     public String getDescription(){
         return description;
     }
+    //pulls and stores
     public void parseXMLAndStoreIt(XmlPullParser myParser) {
         int event;
         String text=null;
@@ -66,6 +68,7 @@ public class HandleXML {
             e.printStackTrace();
         }
     }
+    //fetches stream, url, starts thread
     public void fetchXML(){
         Thread thread = new Thread(new Runnable(){
             @Override

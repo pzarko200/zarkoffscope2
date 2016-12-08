@@ -16,10 +16,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-
+/**
+ * Created by Petar Zarkov on 30/09/2016.
+ */
 
 public class mcSaveDataOutput extends AppCompatActivity implements View.OnClickListener{
-
+    //declare variables
     SharedPreferences mcSharedPrefs;
     Button btnBack;
     TextView mcSDODOW;
